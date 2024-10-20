@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Record</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <h1><i class="fas fa-book"></i> Library Record</h1>
+
+    <div class="container">
+        <div>
+            <h3><i class="fas fa-plus"></i> Add a New Book</h3>
+            <input type="text" id="bookId" placeholder="Book ID">
+            <input type="text" id="author" placeholder="Author Name">
+            <input type="text" id="title" placeholder="Book Title">
+            <button id="addBookButton">Add Book</button>
+        </div>
+
+        <div>
+            <h3><i class="fas fa-book-open"></i> Borrow a Book</h3>
+            <input type="text" id="bookIdBorrow" placeholder="Book ID">
+            <input type="text" id="borrower" placeholder="Borrower Address">
+            <button id="borrowBookButton">Borrow Book</button>
+        </div>
+
+        <div>
+            <h3><i class="fas fa-undo"></i> Return a Book</h3>
+            <input type="text" id="bookIdReturn" placeholder="Book ID">
+            <button id="returnBookButton">Return Book</button>
+        </div>
+
+        <div>
+            <h3><i class="fas fa-search"></i> Search for a Book</h3>
+            <input type="text" id="bookIdSearch" placeholder="Enter Book ID">
+            <button id="searchBookButton">Search Book</button>
+            <div id="searchResults"></div>
+        </div>
+    </div>
+
+    <script type="module" src="./app.js" defer></script>
+</body>
+</html>
